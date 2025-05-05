@@ -5,20 +5,20 @@
 class Treborctl < Formula
   desc "Treborctl command line tool"
   homepage "https://github.com/trebornaut/releases"
-  version "0.3.5"
+  version "0.3.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/treborctl_Darwin_x86_64.zip"
-      sha256 "f37d2267ea4bddae0e165113b929783a6a9eeb1b227ba3c8d793be808ad99957"
+      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/v0.3.6/treborctl_0.3.6_Darwin_x86_64.zip"
+      sha256 "9325bb5667564398b3da21013a5a0df82dc7f6ce464f05185b79b40d0290fed6"
 
       def install
         bin.install "treborctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/treborctl_Darwin_arm64.zip"
-      sha256 "8cc7f55337f83a83e5b4cf5276c33de97eed61ce3d5cfd30475f28dc260e239a"
+      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/v0.3.6/treborctl_0.3.6_Darwin_arm64.zip"
+      sha256 "7d76d4c11625d8d12c475081cce226aeb18428795ed2962635d946b7955c5148"
 
       def install
         bin.install "treborctl"
@@ -28,15 +28,15 @@ class Treborctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/treborctl_Linux_x86_64.zip"
-      sha256 "58ebc3016fda79bbe372682acf3094020dc6d3b8ff33aa40b76ae873c32271f7"
+      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/v0.3.6/treborctl_0.3.6_Linux_x86_64.zip"
+      sha256 "49a70b521133eed2f93bcd5b1a2a6c7be9ed4977cb49058c54fc7b72abe4fe5a"
       def install
         bin.install "treborctl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/treborctl_Linux_arm64.zip"
-      sha256 "09ddcb835cd50df2d9ffdf000c95821c303432362e24525415a29aa161bf0be6"
+      url "https://raw.githubusercontent.com/trebornaut/releases/main/treborctl/v0.3.6/treborctl_0.3.6_Linux_arm64.zip"
+      sha256 "037d95f0d3cce3d9d0cbf7e172701f92bdc2b1312abbe51ce9b85c1ed49e7c36"
       def install
         bin.install "treborctl"
       end
